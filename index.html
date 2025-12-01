@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PC&Móvil González - Reparación y Mantenimiento</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/34692198142?text=Hola,%20necesito%20información%20sobre%20reparación" class="whatsapp-float" target="_blank" title="Contactar por WhatsApp">
+        💬
+    </a>
+
+    <!-- Header -->
+    <header>
+        <nav>
+            <div class="logo">💻 PC&Móvil González</div>
+            <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#servicios">Servicios</a></li>
+                <li><a href="#precios">Precios</a></li>
+                <li><a href="#faq">FAQ</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Urgency Banner -->
+    <div class="urgency-banner">
+        ⚡ ¿PANTALLA ROTA? ¡Reparación en 24-48 horas! 🚀
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero" id="inicio">
+        <h1>Expertos en Reparación y Mantenimiento</h1>
+        <p>Soluciones profesionales para tus ordenadores y dispositivos móviles en San Sebastian</p>
+        <div>
+            <button class="cta-button" onclick="document.getElementById('formulario').scrollIntoView({behavior: 'smooth'})">
+                Solicitar Presupuesto
+            </button>
+            <button class="cta-button secondary" onclick="window.open('https://wa.me/34692198142', '_blank')">
+                WhatsApp Directo
+            </button>
+        </div>
+        <div class="hero-badges">
+            <div class="badge">
+                <strong>Garantía</strong>
+                <span>en todas las reparaciones</span>
+            </div>
+            <div class="badge">
+                <strong>Diagnóstico</strong>
+                <span>gratuito y sin compromiso</span>
+            </div>
+            <div class="badge">
+                <strong>Rapidez</strong>
+                <span>reparaciones en 24-48h</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services" id="servicios">
+        <div class="container">
+            <h2 class="section-title">Nuestros Servicios</h2>
+            <p class="section-subtitle">Trabajamos con todas las marcas: Apple, Samsung, Huawei, Xiaomi, HP, Dell, Lenovo y más</p>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">🔧</div>
+                    <h3>Reparación de Ordenadores</h3>
+                    <p>Diagnóstico y reparación de todo tipo de problemas hardware y software en ordenadores de sobremesa y portátiles.</p>
+                    <div class="price-tag">Desde 30€</div>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">📱</div>
+                    <h3>Reparación de Móviles</h3>
+                    <p>Cambio de pantallas, baterías, cámaras y solución de problemas de software en smartphones y tablets.</p>
+                    <div class="price-tag">Desde 25€</div>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">⚙️</div>
+                    <h3>Mantenimiento de Equipos</h3>
+                    <p>Limpieza, optimización y mantenimiento preventivo para alargar la vida útil de tus dispositivos.</p>
+                    <div class="price-tag">Desde 35€</div>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">💿</div>
+                    <h3>Instalación de Software</h3>
+                    <p>Instalación y configuración de sistemas operativos, programas y aplicaciones específicas.</p>
+                    <div class="price-tag">Desde 25€</div>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">🛡️</div>
+                    <h3>Eliminación de Virus</h3>
+                    <p>Detección y eliminación de malware, virus y protección de tus datos personales.</p>
+                    <div class="price-tag">Desde 30€</div>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">💾</div>
+                    <h3>Recuperación de Datos</h3>
+                    <p>Recuperamos tus archivos perdidos de discos duros, memorias USB y otros dispositivos de almacenamiento.</p>
+                    <div class="price-tag">Desde 50€</div>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">🖥️</div>
+                    <h3>Venta de Equipos</h3>
+                    <p>Ordenadores, portátiles, componentes y accesorios de las mejores marcas al mejor precio.</p>
+                    <div class="price-tag">Consultar</div>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">📡</div>
+                    <h3>Configuración de Redes</h3>
+                    <p>Instalación y configuración de redes WiFi, cableado y mejora de conexiones a internet.</p>
+                    <div class="price-tag">Desde 40€</div>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">🎓</div>
+                    <h3>Asesoramiento Técnico</h3>
+                    <p>Te ayudamos a elegir el equipo perfecto según tus necesidades y presupuesto.</p>
+                    <div class="price-tag">Gratis</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section class="pricing" id="precios">
+        <div class="container">
+            <h2 class="section-title">Precios Orientativos</h2>
+            <p class="section-subtitle">Diagnóstico gratuito y sin compromiso</p>
+            <div class="pricing-grid">
+                <div class="pricing-card">
+                    <h3>Reparaciones Móvil</h3>
+                    <ul>
+                        <li>Cambio pantalla: desde 40€</li>
+                        <li>Cambio batería: desde 25€</li>
+                        <li>Cambio cámara: desde 35€</li>
+                        <li>Problema software: desde 20€</li>
+                    </ul>
+                </div>
+
+                <div class="pricing-card featured">
+                    <h3>🌟 Reparaciones PC</h3>
+                    <ul>
+                        <li>Formateo + Windows: 45€</li>
+                        <li>Limpieza virus: desde 30€</li>
+                        <li>Cambio disco duro: desde 50€</li>
+                        <li>Ampliar RAM: desde 35€</li>
+                        <li>Reparación placa base: desde 60€</li>
+                    </ul>
+                </div>
+
+                <div class="pricing-card">
+                    <h3>Servicios Extra</h3>
+                    <ul>
+                        <li>Mantenimiento anual: 80€</li>
+                        <li>Recuperación datos: desde 50€</li>
+                        <li>Instalación red WiFi: desde 40€</li>
+                        <li>Servicio a domicilio: +15€</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq" id="faq">
+        <div class="container">
+            <h2 class="section-title">Preguntas Frecuentes</h2>
+            <div class="faq-container">
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        <span>¿Cuánto tiempo tarda una reparación?</span>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        La mayoría de reparaciones se completan en 24-48 horas. Reparaciones simples como cambio de pantalla de móvil pueden hacerse el mismo día. Casos más complejos pueden tardar 3-5 días laborables.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        <span>¿Dan garantía en las reparaciones?</span>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        Sí, todas nuestras reparaciones incluyen garantía de 3 meses en mano de obra y piezas utilizadas. Si hay cualquier problema relacionado con la reparación, lo solucionamos sin coste adicional.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        <span>¿Trabajan con todas las marcas?</span>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        Sí, reparamos todas las marcas: Apple (iPhone, iPad, MacBook), Samsung, Huawei, Xiaomi, Oppo, Sony, HP, Dell, Lenovo, Asus, Acer y cualquier otra marca del mercado.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        <span>¿El diagnóstico tiene coste?</span>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        No, el diagnóstico es completamente gratuito y sin compromiso. Revisamos tu equipo, te explicamos el problema y te damos un presupuesto cerrado. Solo pagas si decides reparar.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        <span>¿Usan piezas originales?</span>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        Siempre que es posible, utilizamos piezas originales. En algunos casos ofrecemos alternativas de calidad certificada que son más económicas. Te informamos siempre antes de proceder.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        <span>¿Hacen servicio a domicilio?</span>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        Sí, ofrecemos servicio a domicilio en Donostia/ San Sebastian y alrededores por un suplemento de 15€. Es ideal para configuraciones de red, instalación de software o si no puedes acercarte al taller.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        <span>¿Qué formas de pago aceptan?</span>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        Aceptamos efectivo, tarjeta de crédito/débito y transferencia bancaria. El pago se realiza una vez completada la reparación y estés satisfecho con el resultado.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        <span>¿Pueden recuperar datos de un disco dañado?</span>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        En la mayoría de casos sí. Tenemos herramientas profesionales para recuperación de datos. Primero hacemos un análisis para determinar si es posible y te damos un presupuesto. La tasa de éxito es muy alta.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form -->
+    <section class="contact-form-section" id="formulario">
+        <div class="container">
+            <h2 class="section-title">Solicita tu Presupuesto</h2>
+            <p class="section-subtitle">Te responderemos en menos de 24 horas</p>
+            <div class="form-container">
+                <form id="contactForm" onsubmit="handleSubmit(event)">
+                    <div class="form-group">
+                        <label for="nombre">Nombre completo *</label>
+                        <input type="text" id="nombre" name="nombre" required>
+                        <div class="input-tooltip">
+                            ?
+                            <span class="tooltip-text">Solo letras y espacios permitidos</span>
+                        </div>
+                        <span class="error-message">El nombre solo puede contener letras y espacios</span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="telefono">Teléfono / WhatsApp *</label>
+                        <input type="tel" id="telefono" name="telefono" required>
+                        <div class="input-tooltip">
+                            ?
+                            <span class="tooltip-text">Formato: +34 612345678 o 612345678</span>
+                        </div>
+                        <span class="error-message">Introduce un teléfono válido (mínimo 9 dígitos)</span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email">
+                        <div class="input-tooltip">
+                            ?
+                            <span class="tooltip-text">Formato: ejemplo@correo.com</span>
+                        </div>
+                        <span class="error-message">Introduce un email válido</span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="servicio">Tipo de servicio *</label>
+                        <select id="servicio" name="servicio" required>
+                            <option value="">Selecciona un servicio</option>
+                            <option value="reparacion-movil">Reparación de Móvil</option>
+                            <option value="reparacion-ordenador">Reparación de Ordenador</option>
+                            <option value="mantenimiento">Mantenimiento</option>
+                            <option value="instalacion-software">Instalación de Software</option>
+                            <option value="eliminacion-virus">Eliminación de Virus</option>
+                            <option value="recuperacion-datos">Recuperación de Datos</option>
+                            <option value="configuracion-red">Configuración de Red</option>
+                            <option value="otros">Otros</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="mensaje">Describe tu problema *</label>
+                        <textarea id="mensaje" name="mensaje" required placeholder="Ej: Mi iPhone 12 tiene la pantalla rota..."></textarea>
+                        <div class="input-tooltip">
+                            ?
+                            <span class="tooltip-text">Mínimo 10 caracteres</span>
+                        </div>
+                        <span class="error-message">El mensaje debe tener al menos 10 caracteres</span>
+                    </div>
+
+                    <button type="submit" class="submit-btn">Enviar Solicitud</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contacto">
+        <div class="container">
+            <h2 class="section-title">Información de Contacto</h2>
+            <div class="contact-grid">
+                <div class="contact-item">
+                    <div class="contact-icon">📍</div>
+                    <h3>Ubicación</h3>
+                    <p>Donostia/ San Sebastian<br>País Vasco, España</p>
+                </div>
+
+                <div class="contact-item">
+                    <div class="contact-icon">📞</div>
+                    <h3>Teléfono</h3>
+                    <p>+34 692198142</p>
+                </div>
+
+                <div class="contact-item">
+                    <div class="contact-icon">💬</div>
+                    <h3>WhatsApp</h3>
+                    <p>+34 692198142<br><small>(Respuesta rápida)</small></p>
+                </div>
+
+                <div class="contact-item">
+                    <div class="contact-icon">📧</div>
+                    <h3>Email</h3>
+                    <p>osgonzalez98l@gmail.com</p>
+                </div>
+
+                <div class="contact-item">
+                    <div class="contact-icon">⏰</div>
+                    <h3>Horario</h3>
+                    <p>Lunes a Viernes: 9:00 - 20:00<br>Sábados: 9:00 - 18:00</p>
+                </div>
+
+                <div class="contact-item">
+                    <div class="contact-icon">🚗</div>
+                    <h3>Servicio a Domicilio</h3>
+                    <p>Disponible en<br>Donostia y alrededores</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 PC&Móvil González. Todos los derechos reservados.</p>
+        <p style="margin-top: 0.5rem; font-size: 0.9rem;">Reparación profesional de ordenadores y móviles en Donostia/San Sebastian</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
